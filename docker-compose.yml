@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  mysqldb:
+    container_name: mysqldb
+    image: mysql
+    env_file:
+      - ./config.env
+    volumes:
+      - ./db/lib/init_populate.sql:/docker-entrypoint-initdb.d/init.sql
+
+  library-management:
+    container_name: library-management-container
+    build:
+      context: "."
+      dockerfile: DockerFile
+    env_file:
+      - ./config.env
+    ports:
+      - "8080:8080"
+    restart: on-failure
