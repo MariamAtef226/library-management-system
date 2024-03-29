@@ -64,8 +64,8 @@ Statstical Methods
 
 ## Table of contents 🏷
 
-| File Name                                                                                      | Description                                                               |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| File Name                                                                                   | Description                                                               |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | [Controllers](https://github.com/XMaroRadoX/library-managment-backend/tree/main/controllers)   | Contains Methods for api Implementaion                                    |
 | [Routes](https://github.com/XMaroRadoX/library-managment-backend/tree/main/routes)             | Contains Routes defenetions                                               |
 | [Utils](https://github.com/XMaroRadoX/library-managment-backend/tree/main/utils)               | Contains Methods used to handle errors and validations.                   |
@@ -86,14 +86,8 @@ Statstical Methods
 
 ### Licensing 📝
 
-This code is licensed under the GNU License.
+This code is licensed under the GNU License  .[![GNU License](https://img.shields.io/badge/license-GNU-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ### Authors 🖊
 
 - [Marwan Ahmed](https://github.com/XMaroRadoX)
-
-### Contribution 🥂
-
-Feel free to contribute just make a pull request and do what you wish. 😼
-
-[![GNU License](https://img.shields.io/badge/license-GNU-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html)
