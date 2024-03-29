@@ -11,9 +11,7 @@ Bosta Library Management System is a Node.js-based application designed to help 
 - Search and listing system for books and borrowers 🔎
 - Borrowing process management with due date tracking 📅
 - Updates on book availability and borrowing status 🕒
-
-Feel free to customize the content further based on your project specifics and preferences.
-
+  
 ## System Design 🛠️
 
 > The schema diagram provides a visual representation of the relationships between the various entities, such as books, borrowers, and borrowing processes, in the system. It provide a comprehensive overview of the system architecture and data flow, ensuring a well-designed and efficient library management system.
