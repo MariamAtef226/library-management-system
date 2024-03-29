@@ -6,12 +6,11 @@ Bosta Library Management System is a Node.js-based application designed to help 
 
 ## Key Features 🔑
 
-- User-friendly interface for library management 💻
-- Admin panel for managing books, borrowers, and borrowing processes 🚀
+- Show analytical reports of the borrowing process 💻
 - Search and listing system for books and borrowers 🔎
 - Borrowing process management with due date tracking 📅
 - Updates on book availability and borrowing status 🕒
-  
+
 ## System Design 🛠️
 
 > The schema diagram provides a visual representation of the relationships between the various entities, such as books, borrowers, and borrowing processes, in the system. It provide a comprehensive overview of the system architecture and data flow, ensuring a well-designed and efficient library management system.
@@ -29,7 +28,7 @@ API Documentation is found at : localhost:3000/api-docs
 
 Books
 
--  List all books
+- List all books
 - Get a specific book
 - Add a new book
 - Update a book
@@ -37,7 +36,7 @@ Books
 
 Borrowers
 
--  List all borrowers
+- List all borrowers
 - Get a specific borrower
 - Add a new borrower
 - Update a borrower
@@ -52,10 +51,9 @@ Borrowing Process
 
 Statstical Methods
 
-* Retrieve a report of borrowing processes within a specific period and export data in CSV format
-* Export a report of overdue borrows from the last month in CSV format
-* Export a report of borrowing processes from the last month in CSV format
-
+- Retrieve a report of borrowing processes within a specific period and export data in CSV format
+- Export a report of overdue borrows from the last month in CSV format
+- Export a report of borrowing processes from the last month in CSV format
 
 ### ASSUMPTIONS:
 
@@ -66,9 +64,11 @@ Statstical Methods
 
 ## Table of contents 🏷
 
-| File Name                                                                                   | Description                                                               |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [Routes](https://github.com/XMaroRadoX/library-managment-backend/tree/main/routes)             | Contains Source code of the project                                       |
+| File Name                                                                                      | Description                                                               |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| [Controllers](https://github.com/XMaroRadoX/library-managment-backend/tree/main/controllers)   | Contains Methods for api Implementaion                                    |
+| [Routes](https://github.com/XMaroRadoX/library-managment-backend/tree/main/routes)             | Contains Routes defenetions                                               |
+| [Utils](https://github.com/XMaroRadoX/library-managment-backend/tree/main/utils)               | Contains Methods used to handle errors and validations.                   |
 | [db](https://github.com/XMaroRadoX/library-managment-backend/tree/main/db/lib)                 | Contians database configuration and sample data                           |
 | [package.json](https://github.com/XMaroRadoX/library-managment-backend/blob/main/package.json) | contains the metadata information about the project and its dependencies. |
 
