@@ -1,0 +1,24 @@
+UPDATED:
+- init_populate.sql: added admins table for authentication
+- modified books schema (available_quantity to limit borrowing process)
+- hate8tag te3adel el er diagram
+- in config.env, change variables that are defined by ":" to "=" -- idk if it's docker related or what
+
+FINISHED:
+- Books controller (logic + validations + manual test)
+-- REMAINING: Statistics bonus
+
+- Borrowers controller (logic + validation + manual test)
+
+- Borrowing processes controller (logic + validation + manual test)
+
+- limit borrowing to available quantity only
+
+TODO:
+- Authentication module + adding protection to endpoints
+
+ASSUMPTIONS:
+- Available_quantity shouldn't be altered (derived only from processes of borrowing)
+- Borrowers are lent books through librarians (admins) who register their borrowing process on the system - borrowers don't have access to our system
+- all workers are have accounts on our system ( have entry in table admins)
+- No feature can be accessed unless user is logged in

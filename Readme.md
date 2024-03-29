@@ -17,7 +17,7 @@ Feel free to customize the content further based on your project specifics and p
 
 > The schema diagram provides a visual representation of the relationships between the various entities, such as books, borrowers, and borrowing processes, in the system. It provide a comprehensive overview of the system architecture and data flow, ensuring a well-designed and efficient library management system.
 
- <p align="center" width="100%">
+<p align="center" width="100%">
 <img src="docs/data_docs/schema.png">
 </p>
 <p align="center" width="100%">
@@ -26,33 +26,49 @@ Schema
 
 ### API Endpoints 🔌
 
+API Documentation is found at : localhost:3000/api-docs
+
 Books
 
-- GET /api/books - List all books
-- GET /api/books/:id - Get a specific book
-- POST /api/books - Add a new book
-- PUT /api/books/:id - Update a book
-- DELETE /api/books/:id - Delete a book
+-  List all books
+- Get a specific book
+- Add a new book
+- Update a book
+- Delete a book
 
 Borrowers
 
-- GET /api/borrowers - List all borrowers
-- GET /api/borrowers/:id - Get a specific borrower
-- POST /api/borrowers - Add a new borrower
-- PUT /api/borrowers/:id - Update a borrower
-- DELETE /api/borrowers/:id - Delete a borrower
+-  List all borrowers
+- Get a specific borrower
+- Add a new borrower
+- Update a borrower
+- Delete a borrower
 
 Borrowing Process
 
-- GET /api/borrowing - List all borrowing processes
-- POST /api/borrowing/checkout - Checkout a book
-- POST /api/borrowing/return - Return a book
-- GET /api/borrowing/overdue - List overdue books
+- List all borrowing processes
+- Checkout a book
+- Retrieve a list of borrowing processes for a specific user
+- Retrieve a list of overdue borrowing processes
+
+Statstical Methods
+
+* Retrieve a report of borrowing processes within a specific period and export data in CSV format
+* Export a report of overdue borrows from the last month in CSV format
+* Export a report of borrowing processes from the last month in CSV format
+
+
+### ASSUMPTIONS:
+
+- Available_quantity shouldn't be altered (derived only from processes of borrowing)
+- Borrowers are lent books through librarians (admins) who register their borrowing process on the system - borrowers don't have access to our system
+- all workers are have accounts on our system ( have entry in table admins)
+- No feature can be accessed unless user is logged in
 
 ## Table of contents 🏷
 
-| File Name                                                                                      | Description                                                               |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| File Name                                                                                   | Description                                                               |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | [Routes](https://github.com/XMaroRadoX/library-managment-backend/tree/main/routes)             | Contains Source code of the project                                       |
 | [db](https://github.com/XMaroRadoX/library-managment-backend/tree/main/db/lib)                 | Contians database configuration and sample data                           |
 | [package.json](https://github.com/XMaroRadoX/library-managment-backend/blob/main/package.json) | contains the metadata information about the project and its dependencies. |
@@ -75,7 +91,7 @@ This code is licensed under the GNU License.
 
 ### Authors 🖊
 
-- [Marwan Radwan](https://github.com/XMaroRadoX)
+- [Marwan Ahmed](https://github.com/XMaroRadoX)
 
 ### Contribution 🥂
 

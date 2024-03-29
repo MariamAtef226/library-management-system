@@ -80,7 +80,6 @@ module.exports = (err, req, res, next) => {
             error = new AppError("Invalid Token! please login again", 401);
         else if (err.name =="TokenExpiredError")
                 error =new AppError("This token has expired! Try to log in again",401);
-    
         sendErrorProd(error, res);
     }
 }

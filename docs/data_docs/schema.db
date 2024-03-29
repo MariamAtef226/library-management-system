@@ -1,26 +1,36 @@
-Table books {
-  id int [primary key, unique, increment]
-  title varchar(255) [not null, unique]
-  author varchar(255) [not null]
-  ISBN varchar(255) [not null, unique]
-  quantity int [not null]
-  location varchar(255) [not null]
-  createdAt datetime [not null]
-  updatedAt datetime [not null]
-}
 
-Table borrowers {
-  id int [primary key, increment]
-  name varchar(255) [not null]
-  email varchar(255) [not null, unique]
-  reg_date datetime [default: `CURRENT_TIMESTAMP`]
-}
+  Table books {
+    id int [pk, increment]
+    title varchar(255) [not null, unique]
+    author varchar(255) [not null]
+    ISBN varchar(255) [not null, unique]
+    quantity int [not null]
+    available_quantity int [not null]
+    location varchar(255) [not null]
+    createdAt datetime [not null]
+    updatedAt datetime [not null]
+  }
 
-Table borrowing_processes {
-  id int [primary key, increment]
-  book_id int [ref: > books.id]
-  borrower_id int [ref: > borrowers.id]
-  borrowed_at datetime
-  returned boolean
-  due_date datetime [not null]
-}
+  Table borrowers {
+    id int [pk, increment]
+    name varchar(255) [not null]
+    email varchar(255) [not null, unique]
+    reg_date datetime [default: `CURRENT_TIMESTAMP`]
+  }
+
+  Table borrowing_processes {
+    id int [pk, increment]
+    book_id int [ref: > books.id]
+    borrower_id int [ref: > borrowers.id]
+    borrowed_at datetime
+    returned boolean
+    due_date datetime [not null]
+  }
+
+  Table admins {
+    id int [pk, increment]
+    name varchar(255) [not null]
+    email varchar(255) [not null, unique]
+    password varchar(255) [not null]
+  }
+
