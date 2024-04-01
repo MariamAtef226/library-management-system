@@ -4,7 +4,6 @@ const fs = require('fs');
 const data = [
     { name: 'John Doe', age: 30, email: 'john@example.com' },
     { name: 'Jane Smith', age: 25, email: 'jane@example.com' },
-    // Add more data as needed
 ];
 
 // Function to convert an object to CSV format
