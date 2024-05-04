@@ -51,4 +51,5 @@ This code is licensed under the GNU License  .[![GNU License](https://img.shield
 
 ### Authors 🖊
 
+- [Mariam Atef](https://github.com/MariamAtef226)
 - [Marwan Ahmed](https://github.com/XMaroRadoX)
